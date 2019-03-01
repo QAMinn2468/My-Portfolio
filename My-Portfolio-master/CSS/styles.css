@@ -1,0 +1,120 @@
+/**********************************
+ overall styling
+**********************************/
+body {
+  font-family: serif;
+  color: navy;
+  text-align: center;
+  background-color: ivory;
+}
+
+
+#logo {
+  width: 20%;
+}
+
+#logo img {
+  width: 15%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  right: 3.5%;
+  top: 3.5%;
+  z-index: 5;
+}
+
+#name {
+  width: 100%;
+}
+
+.top {
+  text-align: center;
+}
+
+
+
+#hero {
+  width: 50%;
+  display: inline-block;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+.empty {
+  height: 22em;
+}
+
+#red {
+  width: 100%;
+}
+
+#red img {
+  height: 15em;
+}
+
+#orange {
+  width: 100%;
+  margin-top: 15%;
+}
+
+#orange img {
+  height: 15em;
+}
+
+#lightGreen {
+  width: 100%;
+  margin-top: 15%;
+}
+
+#lightGreen img {
+  height: 15em;
+}
+
+h1 {
+  margin-bottom: .8em;
+}
+
+/*--------------------------------
+   styling over 500px
+
+   (breakpoint #1)
+-----------------------------------*/
+@media screen and (min-width: 500px) {
+
+  #samples {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+    content: "";
+    margin-bottom: 3em;
+  }
+
+  #red, #orange, #lightGreen {
+    flex-basis: auto;
+    margin-top: 0;
+  }
+
+  #red img, #orange img, #lightGreen img {
+    width: auto;
+  }
+
+
+
+
+/*===============================
+
+ styling over 700px
+
+ (breakpoint #2)
+================================*/
+@media screen and (min-width: 700px) {
+
+  h1 {
+    font-size: 3em;
+  }
+}
