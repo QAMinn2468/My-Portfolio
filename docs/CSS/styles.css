@@ -42,7 +42,7 @@ body {
 }
 
 .empty {
-  height: 22em;
+  height: 24em;
 }
 
 #red {
@@ -75,6 +75,9 @@ h1 {
   margin-bottom: .8em;
 }
 
+#articleSection {
+  position: absolute;
+}
 /*--------------------------------
    styling over 500px
 
